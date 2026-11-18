@@ -1,0 +1,9 @@
+[package]
+name = "audioconvert-core"
+version = "0.1.0"
+edition = "2021"
+description = "Convert any audio format to any audio format, orchestrating the bundled ffmpeg."
+license = "MIT"
+
+[dependencies]
+encoding_rs = "0.8"

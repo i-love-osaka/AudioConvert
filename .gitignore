@@ -1,0 +1,8 @@
+target/
+.cargo/
+.DS_Store
+*.app/
+*.dmg
+*.log
+/packaging/macos/ffmpeg
+/packaging/macos/ffmpeg.parts/

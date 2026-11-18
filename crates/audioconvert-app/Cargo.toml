@@ -1,0 +1,22 @@
+[package]
+name = "audioconvert-app"
+version = "0.1.0"
+edition = "2021"
+description = "AudioConvert desktop app — convert any audio format to any audio format."
+license = "MIT"
+
+[[bin]]
+name = "AudioConvert"
+path = "src/main.rs"
+
+[dependencies]
+audioconvert-core = { path = "../audioconvert-core" }
+eframe = { version = "0.31", default-features = false, features = ["glow", "x11", "wayland"] }
+
+[target.'cfg(any(target_os = "macos", target_os = "windows"))'.dependencies]
+rfd = "0.15"
+
+muda = "0.17"
+
+[target.'cfg(target_os = "windows")'.dependencies]
+raw-window-handle = "0.6"
